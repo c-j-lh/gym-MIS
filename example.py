@@ -3,6 +3,7 @@ import gym_MIS
 
 if __name__ == "__main__":
     env = gym.make('MIS-v0')
+    env.set_graph()
     observation = env.reset()
     done = False
     while done == False:
